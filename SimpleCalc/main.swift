@@ -28,7 +28,7 @@ while get{
     } else if functions.contains(response){
         i=0
         op=response
-    } else if types.contains(String(describing: type(of:i))){
+    } else if types.contains(String(describing: type(of:response))){
         numbers.append(Float(response)!)
     }
     else{
