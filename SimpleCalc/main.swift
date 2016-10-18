@@ -28,11 +28,15 @@ while get{
     } else if functions.contains(response){
         i=0
         op=response
-    } else if types.contains(String(describing: type(of:response))){
+//need to fix the type of response
+    } else if types.contains(String(describing: type(of:(Float(response)!)))){
         numbers.append(Float(response)!)
+    } else if response == "help"{
+    calculator.Help()
     }
     else{
         print("invalid input")
+        print(type(of:response))
         break
     }
     if i==0 {
